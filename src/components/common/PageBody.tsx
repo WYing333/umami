@@ -5,7 +5,7 @@ import { useMessages } from '@/components/hooks';
 
 const DEFAULT_WIDTH = '1320px';
 
-export function PageBody({
+export function PageContentBody({
   maxWidth = DEFAULT_WIDTH,
   error,
   isLoading,
