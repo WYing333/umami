@@ -6,6 +6,7 @@ import { useMessages } from '@/components/hooks';
 const DEFAULT_WIDTH = '1320px';
 
 export function PageBody({
+  // GT probe (control): body-only edit, no symbol or signature change.
   maxWidth = DEFAULT_WIDTH,
   error,
   isLoading,
