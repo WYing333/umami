@@ -50,6 +50,10 @@ export function formatNumber(n: string | number) {
 export function formatLongNumber(value: number) {
   const n = Number(value);
 
+  if (!Number.isFinite(n)) {
+    return formatNumber(0);
+  }
+
   if (n >= 1000000000) {
     return `${(n / 1000000000).toFixed(1)}b`;
   }
